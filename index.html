@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🌤 Weather Dashboard</h1>
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="city"
+            placeholder="Enter city name..."
+        >
+        <button onclick="getWeather()">Search</button>
+    </div>
+
+    <div id="loading" class="message">
+        ⏳ Loading weather...
+    </div>
+
+    <!-- Error -->
+    <div id="error" class="message error"></div>
+
+    <!-- Current Weather -->
+    <div id="weatherResult" class="weather-card">
+
+        <h2 id="cityName"></h2>
+
+        <img
+            id="weatherIcon"
+            src=""
+            alt="Weather Icon"
+        >
+
+        <h3 id="temp"></h3>
+
+        <p id="condition"></p>
+
+        <p id="humidity"></p>
+
+    </div>
+
+    <!-- Forecast -->
+    <h2 class="forecast-title">3-Day Forecast</h2>
+
+    <div id="forecast" class="forecast-container">
+
+    
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
